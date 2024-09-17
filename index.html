@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBARS</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--LIBRERIA FONT-AWESOME-->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!--ESTILOS PERSONALIZADOS-->
+    <style>
+        .navbar-nav .nav-link:hover{
+            color: rgb(43, 54, 54);
+            font-size: 18px
+        } 
+
+        .fondo-personalizado{
+            background: linear-gradient(to right, rgba(8, 9, 70, 0.808)25%, rgba(79, 94, 121, 0.973)75%);
+        }
+        .panyalla-completa{
+            width: 100%;
+            height: 100vh;
+            background-color: #F0F0F0; /*GRIS CLARO*/
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>    
+
+</head>
+<body>
+    <!--SECCION NAVBAR-->
+    <nav class="navbar navbar-expand-md fixed-top fondo-personalizado">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-white">NAVBAR TALLER 3</a>
+         <!--ICONO PARA MENI COLAPSADO -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVAR" aria-controls="navbarVAR" aria-expanded="false" aria-label="toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <!--OPCIONES DE NAVBAR-->
+         <div class="collapse navbar-collapse" id="navbarVAR">
+            <ul class="navbar-nav ms-auto">
+
+                <!--OPCION INICIO-->
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="fa fa-home fa-2x" aria-hidden="true">
+                        </i>
+                        Inicio
+                    </a>
+                </li>
+
+                <!--OPCION ARCHIVO-->
+                <li class="nav-item">
+                    <a href="#archivo" class="nav-link">
+                        <i class="fa fa-file-o fa-2x" aria-hidden="true"> </i>
+                        Archivo
+                    </a>
+                </li> 
+                
+                <!--OPCION EDITAR-->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-pencil fa-2x" aria-hidden="true"> </i>
+                        Editar 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Cortar</a></li>
+                        <li><a href="#" class="dropdown-item">Copiar</a></li>
+                        <li><a href="#" class="dropdown-item">Pegar</a></li>
+                    </ul>
+
+                
+                </li>  
+                
+              
+               
+            </ul>
+         </div>
+
+        </div>
+    </nav>
+
+    <!--SECCION CAROUSEL-->
+    <div class="carousel slide" id="carouselVAR" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen1"></button>
+            <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="1" aria-label="Imagen2"></button>
+            <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="2" aria-label="Imagen3"></button>
+            <button type="button" data-bs-target="#carouselVAR" data-bs-slide-to="3" aria-label="Imagen4"></button>           
+        </div>
+        
+
+
+        </div>
+        <div class="carousel-inner">
+            
+            
+            <!--Imagen Uno-->
+            <div class="carousel-item active">
+                <img srcset="images/fondo1.jpg" class="d-block w-100" style="height:100vh;" alt="">
+                <div class="carousel-caption d-note d-md-block">
+                    <hs> TITULO IMAGEN  </hs>
+                    <p> texto corto referente a la Imagen1</p>
+                </div>
+            </div>
+            <!--Imagen Dos-->
+            <div class="carousel-item">
+                <img srcset="images/fondo2.jpg" class="d-block w-100" style="height:100vh;" alt="">
+                <div class="carousel-caption d-note d-md-block">
+                    <hs> TITULO IMAGEN </hs>
+                    <p> texto corto referente a la Imagen2</p>
+                </div>
+            </div>
+            <!--Imagen Tres-->
+            <div class="carousel-item ">
+                <img srcset="images/fondo3.jpg" class="d-block w-100" style="height:100vh;" alt="">
+                <div class="carousel-caption d-note d-md-block">
+                    <hs> TITULO IMAGEN </hs>
+                    <p> texto corto referente a la Imagen3</p>
+                </div>
+            </div>
+            
+            <!--Imagen Cuatro-->
+            <div class="carousel-item ">
+                <img srcset="images/fondo2.jpg" class="d-block w-100" style="height:100vh;" alt="">
+                <div class="carousel-caption d-note d-md-block">
+                    <hs> TITULO IMAGEN </hs>
+                    <p> texto corto referente a la Imagen4</p>
+                </div>
+            </div>
+            
+            <!--Flecha izquierda-->
+            <button type="button" class="carousel-control-prev" data-bs-target="#carouselVAR" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hiden"></span>
+            </button>
+            <!--Flecha a la derecha -->
+            <button type="button" class="carousel-control-next" data-bs-target="#carouselVAR" data-bs-slide="next">
+                <span class="visually-hiden"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                
+            </button>
+        </div>
+    </div>
+
+
+            <!--OPCIONES DEL NAV VAR-->
+        <!--OCION ARCHIVO-->
+        <div class="container-fluid panyalla-completa" id="archivo">
+            <div class="row">
+                <div class="col-xl-x4 col-sm-4 ">
+                    <h1>SECCIÓN IZQUIERDA</h1>
+                    <p> En esta sección inclya información que se mostrara en la parte izquierda </p>
+                </div>
+                <div class="col-xl-x4 col-sm-4">
+                  <h1>SECCIÓN CECCIÓN CENTRO</h1>
+                  <p> En esta sección inclya información que se mostrara en la parte central </p>    
+                </div>
+                <div class="col-xl-x4 col-sm-4">
+                    <h1>SECCIÓN CECCIÓN DERECHA</h1>
+                    <p> En esta sección inclya información que se mostrara en la parte derecha </p>    
+                </div>
+                <!--BOTÓN REGRESASR-->
+                <a href="#carouselVAR"class="btn btn-primary">Regresar</a>
+            </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
